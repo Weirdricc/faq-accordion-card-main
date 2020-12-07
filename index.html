@@ -1,40 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | FAQ Accordion Card</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
+  <body>
+    <div class="wrapp">
+      <div class="container">
+        <section class="xtion">
+          <!-- illustrations for desktop -->
+          <!-- <img
+            class="bg-desk svee"
+            src="images\bg-pattern-desktop.svg"
+            alt=""
+          />
+          <img
+            class="xtion-desk svee"
+            src="images\illustration-woman-online-desktop.svg"
+            alt=""
+          /> -->
+          <!-- <div class="bg-desk svee"></div> -->
+          <div class="xtion-desk svee">
+            <img
+              class="xtion-box svee"
+              src="images\illustration-box-desktop.svg"
+              alt=""
+            />
+          </div>
+          <!-- illustrations for mobile -->
+          <img class="bg-mob svee" src="images\bg-pattern-mobile.svg" alt="" />
+          <img
+            class="xtion-mob svee"
+            src="images\illustration-woman-online-mobile.svg"
+            alt=""
+          />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap"
+            rel="stylesheet"
+          />
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+          <!-- <img class="arrow-down" src="images\icon-arrow-down.svg" alt="" /> -->
+        </section>
+        <section class="faq-wrap">
+          <h1>FAQ</h1>
+          <div class="q-card">
+            <section class="q-box test">
+              <p class="question">How many team members can I invite?</p>
+              <img class="arrow-down" src="images\icon-arrow-down.svg" alt="" />
+            </section>
+            <p class="answer a1">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
+          </div>
+          <div class="q-card">
+            <section class="q-box">
+              <p class="question">What is the maximum file upload size?</p>
+              <img class="arrow-down" src="images\icon-arrow-down.svg" alt="" />
+            </section>
+            <p class="answer">
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </p>
+          </div>
+          <div class="q-card">
+            <section class="q-box">
+              <p class="question">How do I reset my password?</p>
+              <img class="arrow-down" src="images\icon-arrow-down.svg" alt="" />
+            </section>
+            <p class="answer">
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </p>
+          </div>
+          <div class="q-card">
+            <section class="q-box">
+              <p class="question">Can I cancel my subscription?</p>
+              <img class="arrow-down" src="images\icon-arrow-down.svg" alt="" />
+            </section>
+            <p class="answer">
+              Yes! Send us a message and we’ll process your request no questions
+              asked.
+            </p>
+          </div>
+          <div class="q-card">
+            <section class="q-box">
+              <p class="question">Do you provide additional support?</p>
+              <img class="arrow-down" src="images\icon-arrow-down.svg" alt="" />
+            </section>
+            <p class="answer">
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </p>
+          </div>
+          <!-- ACTUAL QUESTIONS BELOW -->
+          <!-- <div class="q-card">
+            <section class="question">
+              <p>What is the maximum file upload size?</p>
+            </section>
+            <section class="answer">
+              <p>
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </p>
+            </section>
+          </div>
+          <div class="q-card">
+            <section class="question">
+              <p>How do I reset my password?</p>
+            </section>
+            <section class="answer">
+              <p>
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </p>
+            </section>
+          </div>
+          <div class="q-card">
+            <section class="question">
+              <p>Can I cancel my subscription?</p>
+            </section>
+            <section class="answer">
+              <p>
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </p>
+            </section>
+          </div>
+          <div class="q-card">
+            <section class="question">
+              <p>Do you provide additional support?</p>
+            </section>
+            <section class="answer">
+              <p>
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </p>
+            </section>
+          </div> -->
+        </section>
+      </div>
+    </div>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >.Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script>
+      let qtion = document.querySelectorAll('.q-box');
+      let xx = document.querySelector('.q-box');
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+      // window.onclick = event => {
+      //   if (event.target.matches('.q-box, .question')) {
+      //     console.log('qbox');
+      //     console.log(event.target);
+      //   } else {
+      //     console.log('non');
+      //   }
+      // };
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      qtion.forEach(box =>
+        box.addEventListener('click', () => {
+          console.log(box);
+          box.classList.toggle('selected');
+          box.nextElementSibling.classList.toggle('stay');
+          box.children[1].classList.toggle('arrow-switch');
+        })
+      );
+    </script>
+  </body>
 </html>
