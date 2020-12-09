@@ -56,11 +56,11 @@
         <section class="faq-wrap">
           <h1>FAQ</h1>
           <div class="q-card">
-            <section class="q-box test">
+            <section class="q-box">
               <p class="question">How many team members can I invite?</p>
               <img class="arrow-down" src="images\icon-arrow-down.svg" alt="" />
             </section>
-            <p class="answer a1">
+            <p class="answer">
               You can invite up to 2 additional users on the Free plan. There is
               no limit on team members for the Premium plan.
             </p>
@@ -161,26 +161,32 @@
       >.Coded by <a href="#">Your Name Here</a>.
     </div>
     <script>
-      let qtion = document.querySelectorAll('.q-box');
-      let xx = document.querySelector('.q-box');
+      let qtions = document.querySelectorAll('.q-box');
+      let answers = document.querySelectorAll('.answer');
+      let arrows = document.querySelectorAll('.arrow-down');
 
-      // window.onclick = event => {
-      //   if (event.target.matches('.q-box, .question')) {
-      //     console.log('qbox');
-      //     console.log(event.target);
-      //   } else {
-      //     console.log('non');
-      //   }
-      // };
-
-      qtion.forEach(box =>
+      qtions.forEach(box => {
         box.addEventListener('click', () => {
-          console.log(box);
-          box.classList.toggle('selected');
-          box.nextElementSibling.classList.toggle('stay');
-          box.children[1].classList.toggle('arrow-switch');
-        })
-      );
+          if (box.nextElementSibling.classList.contains('stay')) {
+            box.nextElementSibling.classList.remove('stay');
+            box.classList.remove('selected');
+            box.children[1].classList.remove('arrow-up');
+          } else {
+            answers.forEach(ans => {
+              ans.classList.remove('stay');
+            });
+            arrows.forEach(aro => {
+              aro.classList.remove('arrow-up');
+            });
+            qtions.forEach(qt => {
+              qt.classList.remove('selected');
+            });
+            box.classList.add('selected');
+            box.children[1].classList.add('arrow-up');
+            box.nextElementSibling.classList.add('stay');
+          }
+        });
+      });
     </script>
   </body>
 </html>

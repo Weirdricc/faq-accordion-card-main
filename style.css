@@ -104,7 +104,7 @@ img {
   width: 300px;
 }
 .q-box {
-  border: 5px solid rebeccapurple;
+  /* border: 5px solid rebeccapurple; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -112,15 +112,18 @@ img {
   /* padding: 3px 0; */
   cursor: pointer;
 }
-.arrow-switch {
-  transform: rotate(180deg);
+.q-box:hover {
+  color: #ff9271;
 }
-.answer {
-  /* border: 2px solid red; */
-  display: none;
+.arrow-up {
+  transform: rotate(180deg);
 }
 .selected {
   color: black;
+}
+.answer {
+  /* border: 3px solid red; */
+  display: none;
 }
 .stay {
   display: block;
