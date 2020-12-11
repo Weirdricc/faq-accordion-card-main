@@ -1,6 +1,3 @@
-:root {
-  --ok-y: #000;
-}
 body {
   font-family: 'Kumbh Sans', sans-serif;
   width: 100%;
@@ -10,7 +7,6 @@ body {
   background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
 .wrapp {
-  /* width: 100vw; */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -21,59 +17,33 @@ body {
   display: flex;
   width: 49.28rem;
   height: 28rem;
-  /* height: 24rem; */
   background-color: white;
   border-radius: 20px;
-  /* width: 60rem;
-  height: 30rem; */
-  /* border: 10px solid crimson; */
-  /* margin: 20px; */
-  /* box-shadow: 0px -10px 0 0 #000; */
 }
 .xtion {
   width: 50%;
   height: 100%;
-  /* width: 400px;
-  height: 300px; */
-  /* border: 10px solid chartreuse; */
-  position: relative;
 }
 .xtion-desk {
-  /* top: 90px; */
-  /* width: 120%;
-  bottom: 70px;
-  left: -50px; */
   width: 100%;
   height: 100%;
-  /* background-image: url('images/bg-pattern-desktop.svg'),
-    url('images/illustration-woman-online-desktop.svg'); */
   background-image: url('images/illustration-woman-online-desktop.svg'),
     url('images/bg-pattern-desktop.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  /* background-position: bottom; */
-  /* background-color: red; */
-  /* border: 10px solid black; */
+  background-position: -60px;
 }
 .xtion-box {
-  /* width: 40%; */
+  position: relative;
   width: 150px;
   height: auto;
-  left: -20px;
-  top: 80px;
-  /* position: absolute; */
-  /* bottom: 0; */
+  left: -90px;
+  top: 190px;
 }
 
-img {
-  /* border: 3px solid black; */
-}
 .faq-wrap {
-  /* border: 10px solid purple; */
   width: 50%;
   height: 100%;
-  /* padding: 0 5em 0 1.25em; */
-  /* padding: 3em; */
 }
 .faq-wrap h1 {
   font-size: 30px;
@@ -81,7 +51,7 @@ img {
 }
 .q-card {
   color: rgb(163, 163, 163);
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgb(220, 220, 220);
   padding: 3px 0;
 }
 .faq-wrap h1,
@@ -95,7 +65,6 @@ img {
   justify-content: space-between;
   align-items: center;
   width: 300px;
-  /* padding: 3px 0; */
   cursor: pointer;
 }
 .q-box:hover {
@@ -121,32 +90,45 @@ img {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-/* .bg-desk,
-.xtion-box,
-.xtion-desk {
-  display: none;
-} */
-
-.xtion-mob,
-.bg-mob {
+.xtion-mob {
   display: none;
 }
 
 /* @media (min-width: 700px) {
-  .xtion-mob,
-  .bg-mob {
+  .xtion-mob {
     display: none;
   }
 } */
 
-/* @media (max-width: 768px) {
-  .xtion-mob,
-  .bg-mob {
-    display: block;
+@media (max-width: 768px) {
+  .xtion-mob {
+    /* display: block; */
+    position: relative;
+    top: -130px;
   }
   .bg-desk,
   .xtion-box,
   .xtion-desk {
     display: none;
   }
-} */
+  /* .wrapp {
+    background-image: url('images/illustration-woman-online-mobile.svg'),
+      url('images/bg-pattern-mobile.svg');
+  } */
+  .container {
+    flex-direction: column;
+    /* align-items: center; */
+    margin: auto;
+    height: 70vh;
+    width: 90vw;
+    border: 10px solid blue;
+  }
+  .xtion {
+    align-self: center;
+    border: 10px solid black;
+    height: 50px;
+    width: 100%;
+    background-image: url('images/bg-pattern-mobile.svg');
+    /* background-size: contain; */
+  }
+}
