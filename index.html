@@ -23,7 +23,7 @@
   <body>
     <div class="wrapp">
       <div class="container">
-        <section class="xtion">
+        <div class="xtion">
           <div class="xtion-desk">
             <img
               class="xtion-box"
@@ -37,63 +37,64 @@
             src="images\illustration-woman-online-mobile.svg"
             alt=""
           />
-        </section>
-        <section class="faq-wrap">
+        </div>
+        <div class="faq-wrap">
           <h1>FAQ</h1>
           <div class="q-card">
-            <section class="q-box">
+            <div class="q-box">
               <p class="question">How many team members can I invite?</p>
               <img class="arrow-down" src="images\icon-arrow-down.svg" alt="" />
-            </section>
+            </div>
             <p class="answer">
               You can invite up to 2 additional users on the Free plan. There is
               no limit on team members for the Premium plan.
             </p>
           </div>
           <div class="q-card">
-            <section class="q-box">
+            <div class="q-box">
               <p class="question">What is the maximum file upload size?</p>
               <img class="arrow-down" src="images\icon-arrow-down.svg" alt="" />
-            </section>
+            </div>
             <p class="answer">
               No more than 2GB. All files in your account must fit your allotted
               storage space.
             </p>
           </div>
           <div class="q-card">
-            <section class="q-box">
+            <div class="q-box">
               <p class="question">How do I reset my password?</p>
               <img class="arrow-down" src="images\icon-arrow-down.svg" alt="" />
-            </section>
+            </div>
             <p class="answer">
               Click “Forgot password” from the login page or “Change password”
               from your profile page. A reset link will be emailed to you.
             </p>
           </div>
           <div class="q-card">
-            <section class="q-box">
+            <div class="q-box">
               <p class="question">Can I cancel my subscription?</p>
               <img class="arrow-down" src="images\icon-arrow-down.svg" alt="" />
-            </section>
+            </div>
             <p class="answer">
               Yes! Send us a message and we’ll process your request no questions
               asked.
             </p>
           </div>
           <div class="q-card">
-            <section class="q-box">
+            <div class="q-box">
               <p class="question">Do you provide additional support?</p>
               <img class="arrow-down" src="images\icon-arrow-down.svg" alt="" />
-            </section>
+            </div>
             <p class="answer">
               Chat and email support is available 24/7. Phone lines are open
               during normal business hours.
             </p>
           </div>
-        </section>
+          <div class="mob-space"></div>
+        </div>
       </div>
     </div>
-
+    <div class="mob-space"></div>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -107,24 +108,30 @@
 
       qtions.forEach(box => {
         box.addEventListener('click', () => {
-          if (box.nextElementSibling.classList.contains('stay')) {
-            box.nextElementSibling.classList.remove('stay');
-            box.classList.remove('selected');
-            box.children[1].classList.remove('arrow-up');
-          } else {
-            answers.forEach(ans => {
-              ans.classList.remove('stay');
-            });
-            arrows.forEach(aro => {
-              aro.classList.remove('arrow-up');
-            });
-            qtions.forEach(qt => {
-              qt.classList.remove('selected');
-            });
-            box.classList.add('selected');
-            box.children[1].classList.add('arrow-up');
-            box.nextElementSibling.classList.add('stay');
-          }
+          // single drop version
+          // if (box.nextElementSibling.classList.contains('stay')) {
+          //   box.nextElementSibling.classList.remove('stay');
+          //   box.classList.remove('selected');
+          //   box.children[1].classList.remove('arrow-up');
+          // } else {
+          //   answers.forEach(ans => {
+          //     ans.classList.remove('stay');
+          //   });
+          //   arrows.forEach(aro => {
+          //     aro.classList.remove('arrow-up');
+          //   });
+          //   qtions.forEach(qt => {
+          //     qt.classList.remove('selected');
+          //   });
+          //   box.classList.add('selected');
+          //   box.children[1].classList.add('arrow-up');
+          //   box.nextElementSibling.classList.add('stay');
+          // }
+
+          // all drop version
+          box.classList.toggle('selected');
+          box.children[1].classList.toggle('arrow-up');
+          box.nextElementSibling.classList.toggle('stay');
         });
       });
     </script>
