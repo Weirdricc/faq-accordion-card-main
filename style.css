@@ -67,8 +67,7 @@ body {
 }
 
 .q-card {
-  color: rgb(163, 163, 163);
-  border-bottom: 1px solid rgb(220, 220, 220);
+  border-bottom: 1px solid hsl(240, 5%, 91%);
   padding: 3px 0;
 }
 .faq-wrap h1,
@@ -76,6 +75,8 @@ body {
   width: 300px;
 }
 .q-box {
+  font-weight: 700;
+  color: hsl(240, 6%, 50%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,9 +85,10 @@ body {
   cursor: pointer;
   border: none;
   background-color: white;
+  padding: 0;
 }
 .q-box:hover {
-  color: #ff9271;
+  color: hsl(14, 88%, 65%);
 }
 .q-box:focus {
   outline: none;
@@ -95,10 +97,13 @@ body {
   transform: rotate(180deg);
 }
 .selected {
+  /* color: hsl(237, 12%, 33%); */
   color: black;
 }
 .answer {
   display: none;
+  font-weight: 300;
+  color: hsl(237, 12%, 33%);
 }
 .stay {
   display: block;
@@ -111,7 +116,6 @@ body {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
   color: rgb(200, 200, 200);
 }
 .xtion-mob {
