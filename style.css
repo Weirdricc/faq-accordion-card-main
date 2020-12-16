@@ -140,7 +140,7 @@ body {
     height: unset;
     width: 340px;
   }
-  @media (max-height: 500px) {
+  @media (max-height: 550px) {
     .container {
       margin-top: 150px;
     }
