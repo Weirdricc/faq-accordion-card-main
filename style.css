@@ -19,6 +19,7 @@ body {
   height: 28rem;
   background-color: white;
   border-radius: 20px;
+  box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.4);
 }
 .xtion {
   width: 50%;
@@ -111,6 +112,7 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+  color: rgb(200, 200, 200);
 }
 .xtion-mob {
   display: none;
