@@ -40,66 +40,91 @@
         </div>
         <div class="faq-wrap">
           <h1>FAQ</h1>
-          <div class="q-card">
-            <div class="q-box">
-              <p class="question">How many team members can I invite?</p>
-              <img class="arrow-down" src="images\icon-arrow-down.svg" alt="" />
+          <div class="faq">
+            <div class="q-card">
+              <button class="q-box">
+                <span class="question"
+                  >How many team members can I invite?</span
+                >
+                <img
+                  class="arrow-down"
+                  src="images\icon-arrow-down.svg"
+                  alt=""
+                />
+              </button>
+              <p class="answer">
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </p>
             </div>
-            <p class="answer">
-              You can invite up to 2 additional users on the Free plan. There is
-              no limit on team members for the Premium plan.
-            </p>
-          </div>
-          <div class="q-card">
-            <div class="q-box">
-              <p class="question">What is the maximum file upload size?</p>
-              <img class="arrow-down" src="images\icon-arrow-down.svg" alt="" />
+            <div class="q-card">
+              <button class="q-box">
+                <span class="question"
+                  >What is the maximum file upload size?</span
+                >
+                <img
+                  class="arrow-down"
+                  src="images\icon-arrow-down.svg"
+                  alt=""
+                />
+              </button>
+              <p class="answer">
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </p>
             </div>
-            <p class="answer">
-              No more than 2GB. All files in your account must fit your allotted
-              storage space.
-            </p>
-          </div>
-          <div class="q-card">
-            <div class="q-box">
-              <p class="question">How do I reset my password?</p>
-              <img class="arrow-down" src="images\icon-arrow-down.svg" alt="" />
+            <div class="q-card">
+              <button class="q-box">
+                <span class="question">How do I reset my password?</span>
+                <img
+                  class="arrow-down"
+                  src="images\icon-arrow-down.svg"
+                  alt=""
+                />
+              </button>
+              <p class="answer">
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </p>
             </div>
-            <p class="answer">
-              Click “Forgot password” from the login page or “Change password”
-              from your profile page. A reset link will be emailed to you.
-            </p>
-          </div>
-          <div class="q-card">
-            <div class="q-box">
-              <p class="question">Can I cancel my subscription?</p>
-              <img class="arrow-down" src="images\icon-arrow-down.svg" alt="" />
+            <div class="q-card">
+              <button class="q-box">
+                <span class="question">Can I cancel my subscription?</span>
+                <img
+                  class="arrow-down"
+                  src="images\icon-arrow-down.svg"
+                  alt=""
+                />
+              </button>
+              <p class="answer">
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </p>
             </div>
-            <p class="answer">
-              Yes! Send us a message and we’ll process your request no questions
-              asked.
-            </p>
-          </div>
-          <div class="q-card">
-            <div class="q-box">
-              <p class="question">Do you provide additional support?</p>
-              <img class="arrow-down" src="images\icon-arrow-down.svg" alt="" />
+            <div class="q-card">
+              <button class="q-box">
+                <span class="question">Do you provide additional support?</span>
+                <img
+                  class="arrow-down"
+                  src="images\icon-arrow-down.svg"
+                  alt=""
+                />
+              </button>
+              <p class="answer">
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </p>
             </div>
-            <p class="answer">
-              Chat and email support is available 24/7. Phone lines are open
-              during normal business hours.
-            </p>
           </div>
-          <div class="mob-space"></div>
         </div>
       </div>
-    </div>
-    <div class="mob-space"></div>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >.Coded by <a href="https://github.com/Weirdricc">Weirdricc</a>.
+      <div class="space"></div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >.Coded by <a href="https://github.com/Weirdricc">Weirdricc</a>.
+      </div>
     </div>
     <script>
       let qtions = document.querySelectorAll('.q-box');
@@ -108,7 +133,7 @@
 
       qtions.forEach(box => {
         box.addEventListener('click', () => {
-          // single drop version
+          // single drop
           // if (box.nextElementSibling.classList.contains('stay')) {
           //   box.nextElementSibling.classList.remove('stay');
           //   box.classList.remove('selected');
@@ -128,7 +153,7 @@
           //   box.nextElementSibling.classList.add('stay');
           // }
 
-          // all drop version
+          // all drop
           box.classList.toggle('selected');
           box.children[1].classList.toggle('arrow-up');
           box.nextElementSibling.classList.toggle('stay');
