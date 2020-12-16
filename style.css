@@ -140,6 +140,11 @@ body {
     height: unset;
     width: 340px;
   }
+  @media (max-height: 500px) {
+    .container {
+      margin-top: 150px;
+    }
+  }
   .xtion {
     height: 100px;
     width: 80%;
