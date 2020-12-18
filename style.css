@@ -1,54 +1,55 @@
 body {
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   font-family: 'Kumbh Sans', sans-serif;
   width: 100%;
   height: 100%;
+  min-height: 100vh;
   margin: 0;
   font-size: 12px;
-  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
 .wrapp {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  /* padding: 0 0.5rem; */
+  min-height: 100vh;
 }
 .container {
-  display: flex;
-  width: 49.28rem;
-  height: 28rem;
   background-color: white;
+  display: flex;
+  height: 28rem;
+  width: 100%;
+  max-width: 700px;
   border-radius: 20px;
   box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.4);
+  margin-bottom: 2rem;
 }
 .xtion {
   width: 50%;
   height: 100%;
 }
 .xtion-desk {
-  width: 100%;
-  height: 100%;
-  background-image: url('images/illustration-woman-online-desktop.svg'),
-    url('images/bg-pattern-desktop.svg');
+  background-image: url('images/bg-pattern-desktop.svg'),
+    url('images/illustration-woman-online-desktop.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: -60px;
+  width: 100%;
+  height: 100%;
+
+  position: relative;
 }
 .xtion-box {
-  position: relative;
-  width: 150px;
   height: auto;
-  left: -90px;
+  width: 120px;
+  position: absolute;
   top: 190px;
+  left: -20%;
 }
 .faq-wrap {
-  /* border: 5px solid green; */
-
   display: flex;
   flex-direction: column;
-  width: 50%;
+  flex-basis: 60%;
 }
 .faq-wrap h1 {
   font-size: 30px;
@@ -56,8 +57,6 @@ body {
   padding: 0 1.5rem;
 }
 .faq {
-  /* border: 5px solid green; */
-
   overflow: scroll;
   margin-bottom: 20px;
   padding: 0 1.5rem;
@@ -73,32 +72,20 @@ body {
 }
 
 .q-card {
-  /* padding: 3px 0; */
-
   border-bottom: 1px solid hsl(240, 5%, 91%);
-
   padding: 0.5rem 0;
 }
-.faq-wrap h1,
-.q-card {
-  /* width: 300px; */
-}
 .q-box {
-  /* width: 300px; */
-  /* height: 40px; */
-
-  font-weight: 700;
+  background-color: white;
   color: hsl(240, 6%, 50%);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
-  border: none;
-  /* border: 5px solid green; */
-  background-color: white;
   padding: 10px 0;
-
   width: 100%;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
 }
 .q-box:hover {
   color: hsl(14, 88%, 65%);
@@ -139,73 +126,47 @@ body {
   .wrapp {
     display: block;
     min-height: 80vh;
-
-    /* padding: 0.5rem; */
+    padding: 0.5rem;
   }
   .container {
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* width: 340px; */
-
-    margin: auto;
-    margin-top: 20vh;
-    height: unset;
-
-    max-width: 375px;
     display: block;
-    margin-bottom: 2rem;
+    margin: 20vh auto 2rem auto;
+    height: unset;
+    width: 100%;
+    max-width: 375px;
   }
   @media (max-height: 550px) {
     .container {
       margin-top: 150px;
     }
   }
-  .xtion {
-    /* width: 80%; */
-
-    height: 100px;
-    background-image: url('images/bg-pattern-mobile.svg');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    /* border: 5px solid brown; */
-
-    width: 100%;
-    position: relative;
-  }
   .bg-desk,
   .xtion-box,
   .xtion-desk {
     display: none;
   }
+  .xtion {
+    background-image: url('images/bg-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+    height: 100px;
+    width: 100%;
+  }
   .xtion-mob {
-    /* position: relative; */
-    /* left: -10px; */
-
     display: block;
-    top: -110px;
-    /* border: 5px solid chartreuse; */
-
     position: absolute;
-    left: 10%;
+    top: -110px;
+    left: 50%;
+    margin-left: -145px;
   }
   .faq-wrap {
-    /* width: 100%; */
-    /* align-items: center; */
-
     width: auto;
     padding: 1.5rem;
-    /* border: 5px solid blue; */
   }
   .faq-wrap h1 {
-    /* margin-top: 2rem; */
-
     text-align: center;
-
     margin-top: 1rem;
-  }
-  .faq {
-    /* return */
-    /* margin-bottom: 50px; */
   }
   .q-box:hover {
     color: black;
